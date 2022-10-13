@@ -1,0 +1,42 @@
+.breadcrumbs {
+  font-weight: 400;
+  margin-bottom: 32px;
+
+  @media #{$desktop} {
+    margin-bottom: 50px;
+  }
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.breadcrumbs__item {
+  padding-right: 20px;
+  position: relative;
+  font-size: $font-size-normal;
+  line-height: $line-height-normal;
+  color: $grey1;
+
+  &::after {
+    position: absolute;
+    content: "/";
+    top: 0;
+    right: 6px;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &--current {
+    color: $black;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="html" lang="<router-view></router-view>">
+@@include('html/_head.html',{'title': 'Корзина'})
+
+<body class="body">
+  <!-- HEADER -->
+  @@include('html/_header.html',{})
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <span>Корзина</span>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- @@include('html/_footer.html',{}) -->
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-default, sans-serif;
+  font-size: $font-size-normal;
+  line-height: 19px;
+  color: $text-main-color;
+  background-color: $white;
+}

@@ -1,0 +1,62 @@
+.input-number {
+  display: flex;
+  width: auto;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 700;
+
+  @media #{$tablet} {
+    font-size: $font-size-medium;
+  }
+
+
+  & input[type="number"]::-webkit-inner-spin-button,
+  & input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  & input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.input-number__arrow-minus,
+.input-number__arrow-plus {
+  color: #000000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 50px;
+  height: 100%;
+  border: 1px solid $black;
+  background-color: $white;
+  outline: none;
+  cursor: pointer;
+
+  @media #{$tablet} {
+    width: 40px;
+  }
+}
+
+.input-number__number-field {
+  margin: 0 -1px;
+  height: 100%;
+  width: 106px;
+  text-align: center;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid $black;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  @media #{$tablet} {
+    width: 60px;
+  }
+}

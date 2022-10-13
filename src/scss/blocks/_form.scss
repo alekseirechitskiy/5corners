@@ -1,0 +1,134 @@
+.form{
+  display: block;
+}
+
+// === CHECKBOX ===
+.form__checkbox-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.form__checkbox {
+  display: inline-flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__checkbox-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+  display: block;
+  position: absolute;
+}
+
+.form__checkbox-text {
+  width: auto;
+  font-size: $font-size-normal;
+  display: inline-block;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -2px;
+  }
+}
+
+.form__checkbox-input:checked+.form__checkbox-text::before {
+  background-color: $main;
+  background-image: url("@img/form-elements/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox-input:disabled+.form__checkbox-text::before {
+  background-color: lightgray;
+  border-color: gray;
+}
+
+.form__checkbox-input:checked:disabled+.form__checkbox-text::before {
+  background-color: lightgray;
+  border-color: gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("@img/form-elements/checked-disabled.svg");
+}
+
+// === RADIOBUTTONS ===
+
+.form__radio {
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__radio-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.form__radio-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+  display: block;
+  position: absolute;
+}
+
+.form__radio-text {
+  font-size: $font-size-normal;
+  display: inline-block;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -2px;
+    border-radius: 50%;
+  }
+}
+
+.form__radio-input:checked+.form__radio-text::before {
+  background-color: $white;
+  background-image: url("@img/form-elements/radio-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__radio-input:disabled+.form__radio-text::before {
+  background-color: lightgray;
+  border-color: gray;
+}
+
+.form__radio-input:checked:disabled+.form__radio-text::before {
+  background-color: lightgray;
+  border-color: gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("@img/form-elements/radio-disabled.svg");
+}
+
+
