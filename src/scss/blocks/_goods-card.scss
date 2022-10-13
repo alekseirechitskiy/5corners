@@ -1,0 +1,72 @@
+.goods-card {
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.goods-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.goods-card__image {
+  margin-right: 12px;
+
+  @media #{$desktop} {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+}
+
+.goods-card__info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.goods-card__name,
+.goods-card__price {
+  margin: 0;
+  font-weight: 700;
+  font-size: $font-size-normal;
+  line-height: $line-height-small;
+
+  @media #{$desktop} {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+}
+
+.goods-card__info-middle {
+  display: none;
+  
+  @media #{$desktop} {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+}
+
+.goods-card__text {
+  color: $grey1;
+  max-width: 150px;
+}
+
+.goods-card__info-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.goods-card__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}

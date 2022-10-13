@@ -12,14 +12,141 @@
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <a class="breadcrumbs__link link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item breadcrumbs__item--current">
             <span>Корзина</span>
           </li>
         </ul>
       </div>
-      
+      <section class="cart">
+        <div class="cart__inner">
+          <div class="cart__aside">
+            <h1 class="cart__title title">Корзина</h1>
+            <div class="cart__authorization authorization">
+              <span class="authorization__text">Есть аккаунт?</span>
+              <a class="authorization__link link" href="#">Войти</a>
+            </div>
+            <form class="cart__form form" action="#">
+              <label class="form__input"> 
+                <input class="form__input-field" type="text" placeholder="Адрес">
+                <legend class="form__input-legend">Адрес</legend>
+              </label>
+              <div class="form__map">
+                <img src="@img/map.jpg" alt="">
+              </div>
+              <div class="form__field-box">
+                <label class="form__input"> 
+                  <input class="form__input-field" type="text" placeholder="Ваше Имя">
+                  <legend class="form__input-legend">Ваше Имя</legend>
+                </label>
+                <label class="form__input"> 
+                  <input class="form__input-field" type="tel" placeholder="Ваш Телефон">
+                  <legend class="form__input-legend">Ваш Телефон</legend>
+                </label>
+              </div>
+              <label class="form__input"> 
+                <input class="form__input-field" type="email" placeholder="Ваш Email">
+                <legend class="form__input-legend">Ваш Email</legend>
+              </label>
+              <label class="form__input"> 
+                <select name="" id="" placeholder="Тип упаковки">
+                  <option value="none">без упаковки</option>
+                  <option value="standart">стандартная</option>
+                  <option value="present">подарочная</option>
+                </select>  
+                <legend class="form__input-legend">Тип упаковки</legend>
+              </label>
+              <label class="form__input"> 
+                <input class="form__input-field" type="text" placeholder="Введите комментарий">
+                <legend class="form__input-legend">Введите комментарий</legend>
+              </label>
+            </form>
+            <div class="cart__goods goods">
+              <h2 class="goods__title subtitle">Выбранные товары:</h2>
+              <ul class="goods__list">
+                <li class="goods__item goods-card">
+                  <picture>
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 1">
+                  </picture>
+                  <div class="goods-card__info">
+                    <div class="goods-card__info-top">
+                        <span class="goods-card__name">Товар 1</span>
+                        <span class="goods-card__price">1090 руб.</span>
+                    </div>
+                    <div class="goods-card__info-middle">
+                      <p class="goods-card__text">Описание товара, которое может быть длинным</p>
+                    </div>
+                    <div class="goods-card__info-bottom">
+                      <div class="goods-card__input-number input-number">
+                        <button class="input-number__arrow-minus"></button>
+                        <input class="input-number__number-field" type="number" value="1">
+                        <button class="input-number__arrow-plus"></button>
+                      </div>
+                      <button class="goods-card__button link">Удалить</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="goods__item goods-card">
+                  <picture>
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 2">
+                  </picture>
+                  <div class="goods-card__info">
+                    <div class="goods-card__info-top">
+                        <span class="goods-card__name">Товар 2</span>
+                        <span class="goods-card__price">700 руб.</span>
+                    </div>
+                    <div class="goods-card__info-middle">
+                      <p class="goods-card__text">Описание товара, которое может быть очень-очень длинным</p>
+                    </div>
+                    <div class="goods-card__info-bottom">
+                      <div class="goods-card__input-number input-number">
+                        <button class="input-number__arrow-minus"></button>
+                        <input class="input-number__number-field" type="number" value="1">
+                        <button class="input-number__arrow-plus"></button>
+                      </div>
+                      <button class="goods-card__button link">Удалить</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="goods__item goods-card">
+                  <picture>
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 3">
+                  </picture>
+                  <div class="goods-card__info">
+                    <div class="goods-card__info-top">
+                        <span class="goods-card__name">Товар 3</span>
+                        <span class="goods-card__price">2000 руб.</span>
+                    </div>
+                    <div class="goods-card__info-middle">
+                      <p class="goods-card__text">Короткое описание товара</p>
+                    </div>
+                    <div class="goods-card__info-bottom">
+                      <div class="goods-card__input-number input-number">
+                        <button class="input-number__arrow-minus"></button>
+                        <input class="input-number__number-field" type="number" value="2">
+                        <button class="input-number__arrow-plus"></button>
+                      </div>
+                      <button class="goods-card__button link">Удалить</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cart__total">
+              <span class="cart__total-text">Итог:</span>
+              <div class="cart__total-summ">
+                <span class="cart__total-number">3790</span>
+                <span class="cart__total-currency">руб.</span>
+              </div>
+            </div>
+            <button class="cart__button button">Купить</button>
+          </div>
+        </div>
+      </section>
     </div>
 
   </main>
