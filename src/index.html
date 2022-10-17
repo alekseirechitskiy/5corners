@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html" lang="<router-view></router-view>">
+<html class="html" lang="ru">
 @@include('html/_head.html',{'title': 'Корзина'})
 
 <body class="body">
@@ -28,13 +28,11 @@
               <a class="authorization__link link" href="#">Войти</a>
             </div>
             <form class="cart__form form" id="cartForm">
-              <label class="form__input"> 
+              <label class="form__input form__input--address"> 
                 <input class="form__input-field form__input-field--address" id="userAddress" type="text" placeholder="Адрес" required>
                 <legend class="form__input-legend">Адрес</legend>
               </label>
-              <div class="form__map" id="map">
-                <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A796e51c78b166c050b0bcf8c5dbd11ea2cdb427c4341354bc0e68fbd594298a8&amp;source=constructor" width="555" height="700" frameborder="0"></iframe> -->
-              </div>
+              <div class="form__map" id="map"></div>
               <div class="form__field-box">
                 <label class="form__input"> 
                   <input class="form__input-field" id="userName" type="text" placeholder="Ваше Имя" required>
@@ -49,7 +47,7 @@
                 <input class="form__input-field" type="email" placeholder="Ваш Email" id="userEmail" required>
                 <legend class="form__input-legend">Ваш Email</legend>
               </label>
-              <label class="form__input"> 
+              <label class="form__input form__input--select"> 
                 <select class="form__select" id="userPackage" required>
                   <option class="form__option--empty" value="">Тип упаковки</option>
                   <option class="form__option" value="none">Без упаковки</option>
@@ -69,8 +67,10 @@
               <ul class="goods__list">
                 <li class="goods__item goods-card">
                   <picture>
-                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
-                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 1">
+                    <!-- <source type="image/webp" media="(min-width: 1280px)" srcset="@img/goods.webp 1x, @img/goods@2x.webp 2x">
+                    <source type="image/webp" srcset="@img/goods-mobile.webp 1x, @img/goods-mobile@2x.webp 2x"> -->
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg 1x, @img/goods@2x.jpg 2x">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" srcset="@img/goods-mobile@2x.jpg 2x" width="80" height="80" alt="Товар 1">
                   </picture>
                   <div class="goods-card__info">
                     <div class="goods-card__info-top">
@@ -92,8 +92,10 @@
                 </li>
                 <li class="goods__item goods-card">
                   <picture>
-                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
-                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 2">
+                    <!-- <source type="image/webp" media="(min-width: 1280px)" srcset="@img/goods.webp 1x, @img/goods@2x.webp 2x">
+                    <source type="image/webp" srcset="@img/goods-mobile.webp 1x, @img/goods-mobile@2x.webp 2x"> -->
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg 1x, @img/goods@2x.jpg 2x">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" srcset="@img/goods-mobile@2x.jpg 2x" width="80" height="80" alt="Товар 1">
                   </picture>
                   <div class="goods-card__info">
                     <div class="goods-card__info-top">
@@ -115,8 +117,10 @@
                 </li>
                 <li class="goods__item goods-card">
                   <picture>
-                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg">
-                    <img class="goods-card__image" src="@img/goods-mobile.jpg" width="80" height="80" alt="Товар 3">
+                    <!-- <source type="image/webp" media="(min-width: 1280px)" srcset="@img/goods.webp 1x, @img/goods@2x.webp 2x">
+                    <source type="image/webp" srcset="@img/goods-mobile.webp 1x, @img/goods-mobile@2x.webp 2x"> -->
+                    <source media="(min-width: 1280px)" srcset="@img/goods.jpg 1x, @img/goods@2x.jpg 2x">
+                    <img class="goods-card__image" src="@img/goods-mobile.jpg" srcset="@img/goods-mobile@2x.jpg 2x" width="80" height="80" alt="Товар 1">
                   </picture>
                   <div class="goods-card__info">
                     <div class="goods-card__info-top">

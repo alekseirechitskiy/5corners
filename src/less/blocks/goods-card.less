@@ -1,7 +1,11 @@
 .goods-card {
   display: flex;
   width: 100%;
-  margin-bottom: 25px;
+  padding-bottom: 14px;
+
+  @media @desktop {
+    padding-bottom: 23px;
+  }
 }
 
 .goods-card__info {
@@ -9,6 +13,11 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-grow: 1;
+
+  @media @desktop {
+    width: 301px;
+    flex-grow: 0;
+  }
 }
 
 .goods-card__image {
@@ -26,6 +35,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+
+  @media @desktop {
+    justify-content: flex-start;
+  }
 }
 
 .goods-card__name,
@@ -41,18 +54,28 @@
   }
 }
 
+.goods-card__name {
+  @media @desktop {
+    margin-right: 133px;
+  }
+}
+
+
 .goods-card__info-middle {
   display: none;
   
   @media @desktop {
     display: block;
-    margin-bottom: 25px;
   }
 }
 
 .goods-card__text {
   color: @grey1;
   max-width: 150px;
+  
+  @media @desktop{
+    padding-bottom: 20px;
+  }
 }
 
 .goods-card__info-bottom {

@@ -7,14 +7,17 @@
 }
 
 .goods__item {
-  padding-bottom: 16px;
   border-bottom: 1px solid @grey2;
+  margin-bottom: 17px;
 
   @media @desktop {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   &:last-child {
     border-bottom: none;
+    @media @desktop {
+      margin-bottom: 0;
+    }
   }
 }
