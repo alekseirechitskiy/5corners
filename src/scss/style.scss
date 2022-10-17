@@ -1,4 +1,4 @@
-// @import "libs"; // Файлы стилей вендоров/плвгинов
+@import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
 @import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
@@ -26,5 +26,6 @@
 @import "blocks/cart";
 @import "blocks/authorization";
 @import "blocks/form";
+@import "blocks/select2";
 @import "blocks/goods";
 @import "blocks/goods-card";

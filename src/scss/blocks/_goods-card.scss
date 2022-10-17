@@ -48,7 +48,6 @@
     display: block;
     margin-bottom: 25px;
   }
-
 }
 
 .goods-card__text {
@@ -67,6 +66,18 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  text-decoration: underline;
+  // text-decoration: underline;
+  border-bottom: 1px solid $grey1;
   cursor: pointer;
+  font-size: $font-size-extraSmall;
+  line-height: $line-height-extraSmall;
+
+  &:hover {
+    border-bottom: 1px solid $black;
+  }
+
+  @media #{$desktop} {
+    font-size: $font-size-small;
+    line-height: 16px;
+  }
 }

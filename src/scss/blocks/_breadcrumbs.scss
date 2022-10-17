@@ -1,8 +1,10 @@
 .breadcrumbs {
   font-weight: 400;
+  margin-top: 29px;
   margin-bottom: 32px;
 
   @media #{$desktop} {
+    margin-top: 0;
     margin-bottom: 50px;
   }
 }

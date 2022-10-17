@@ -53,5 +53,10 @@
         "not ie <= 11",
         "not op_mini all",
         "not < 0.25%"
-    ]
+    ],
+    "dependencies": {
+        "jquery": "^3.6.1",
+        "select2": "^4.1.0-rc.0",
+        "ymaps": "^0.2.1"
+    }
 }

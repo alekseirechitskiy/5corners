@@ -27,40 +27,42 @@
               <span class="authorization__text">Есть аккаунт?</span>
               <a class="authorization__link link" href="#">Войти</a>
             </div>
-            <form class="cart__form form" action="#">
+            <form class="cart__form form" id="cartForm">
               <label class="form__input"> 
-                <input class="form__input-field" type="text" placeholder="Адрес">
+                <input class="form__input-field form__input-field--address" id="userAddress" type="text" placeholder="Адрес" required>
                 <legend class="form__input-legend">Адрес</legend>
               </label>
-              <div class="form__map">
-                <img src="@img/map.jpg" alt="">
+              <div class="form__map" id="map">
+                <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A796e51c78b166c050b0bcf8c5dbd11ea2cdb427c4341354bc0e68fbd594298a8&amp;source=constructor" width="555" height="700" frameborder="0"></iframe> -->
               </div>
               <div class="form__field-box">
                 <label class="form__input"> 
-                  <input class="form__input-field" type="text" placeholder="Ваше Имя">
+                  <input class="form__input-field" id="userName" type="text" placeholder="Ваше Имя" required>
                   <legend class="form__input-legend">Ваше Имя</legend>
                 </label>
                 <label class="form__input"> 
-                  <input class="form__input-field" type="tel" placeholder="Ваш Телефон">
+                  <input class="form__input-field" id="userPhone" type="tel" placeholder="Ваш Телефон" required>
                   <legend class="form__input-legend">Ваш Телефон</legend>
                 </label>
               </div>
               <label class="form__input"> 
-                <input class="form__input-field" type="email" placeholder="Ваш Email">
+                <input class="form__input-field" type="email" placeholder="Ваш Email" id="userEmail" required>
                 <legend class="form__input-legend">Ваш Email</legend>
               </label>
               <label class="form__input"> 
-                <select name="" id="" placeholder="Тип упаковки">
-                  <option value="none">без упаковки</option>
-                  <option value="standart">стандартная</option>
-                  <option value="present">подарочная</option>
+                <select class="form__select" id="userPackage" required>
+                  <option class="form__option--empty" value="">Тип упаковки</option>
+                  <option class="form__option" value="none">Без упаковки</option>
+                  <option class="form__option" value="standart">Стандартная</option>
+                  <option class="form__option" value="present">Подарочная</option>
                 </select>  
-                <legend class="form__input-legend">Тип упаковки</legend>
+                <div class="form__input-legend">Тип упаковки</div>
               </label>
               <label class="form__input"> 
-                <input class="form__input-field" type="text" placeholder="Введите комментарий">
+                <input class="form__input-field" type="text" id="userComment" placeholder="Введите комментарий">
                 <legend class="form__input-legend">Введите комментарий</legend>
               </label>
+              <!-- <button class="form__button cart__button button" type="submit">Купить</button> -->
             </form>
             <div class="cart__goods goods">
               <h2 class="goods__title subtitle">Выбранные товары:</h2>
@@ -143,7 +145,7 @@
                 <span class="cart__total-currency">руб.</span>
               </div>
             </div>
-            <button class="cart__button button">Купить</button>
+            <button class="form__button cart__button button" form="cartForm" type="submit">Купить</button>
           </div>
         </div>
       </section>

@@ -1,13 +1,18 @@
 .cart {
-  padding-bottom: 40px;
+  padding-bottom: 125px;
 
   @media #{$desktop} {
-    padding-bottom: 70px;
+    padding-bottom: 145px;
     position: relative;
   }
 }
 
 .cart__inner{
+  width: 100%;
+  @media #{$tablet} {
+    width: 70%;
+  }
+  
   @media #{$desktop} {
     width: 505px;
     margin-right: 50px;
