@@ -45,7 +45,7 @@ export const ttfToWoff = () => {
 
 export const fontsStyle = () => {
     // Файл стилей прдключения шрифтов
-    let fontsFile = `${app.path.srcFolder}/scss/_fonts.scss`;
+    let fontsFile = `${app.path.srcFolder}/less/fonts.less`;
     // Проверяем, существуют ли файлы шрифтов
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
@@ -85,7 +85,7 @@ export const fontsStyle = () => {
                 }
             } else {
                 // Если файл есть, выводим сообщение
-                console.log("Файл scss/_fonts.scss уже существует. Для обновения файла нужно его удалить.");
+                console.log("Файл scss/fonts.less уже существует. Для обновения файла нужно его удалить.");
             }
         }
     });
