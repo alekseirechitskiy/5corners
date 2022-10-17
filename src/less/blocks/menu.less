@@ -15,11 +15,11 @@
   right: 0;
   bottom:0;
   height: 100vh;
-  background-color: $white;
+  background-color: @white;
   transform: translate(-50%, -200%);
   transition: all .3s;
 
-  @media #{$desktop} {
+  @media @desktop {
     position: static;
     flex-direction: row;
     justify-content: space-between;
@@ -38,19 +38,19 @@
 .menu__item {
   margin: 25px 0;
   
-  @media #{$desktop} {
+  @media @desktop {
     margin: 0;
     margin-right: 25px;
   }
 
   &:nth-child(6n+3) {
-    @media #{$desktop} {
+    @media @desktop {
       margin-right: 144px;
     }
   }
 
   &:nth-child(6n+4) {
-    @media #{$desktop} {
+    @media @desktop {
       margin-left: 144px;
     }
   }
@@ -62,9 +62,9 @@
 }
 
 .menu__link {
-  @media #{$desktop} {
-    font-size: $font-size-medium;
-    line-height: $line-height-medium;
+  @media @desktop {
+    font-size: @font-size-medium;
+    line-height: @line-height-medium;
     font-weight: 700;
     text-transform: uppercase;
     color: #9F9F9F;

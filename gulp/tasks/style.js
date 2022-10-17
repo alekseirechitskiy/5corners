@@ -1,5 +1,7 @@
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+// import dartSass from 'sass';
+// import gulpSass from 'gulp-sass';
+import less from 'gulp-less';
+
 import sourcemaps from 'gulp-sourcemaps';
 import rename from 'gulp-rename';
 import cleanCss from 'gulp-clean-css'; // Сжатие CSS файла
@@ -7,13 +9,13 @@ import webpcss from 'gulp-webpcss'; // Вывод WEBP изображений
 import autoprefixer from 'gulp-autoprefixer'; //Добавление вендорных префиксов
 import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Группировка медиа запросов
 
-const sass = gulpSass(dartSass);
+// const sass = gulpSass(dartSass);
 
-export const scss = () => {
-    return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
+export const style = () => {
+    return app.gulp.src(app.path.src.less, { sourcemaps: app.isDev })
         .pipe(app.plugins.plumber(
             app.plugins.notify.onError({
-                title: "SCSS",
+                title: "Less",
                 message: "Error: <%= error.message %>"
             })
         ))
@@ -22,7 +24,7 @@ export const scss = () => {
           sourcemaps.init()
         )
       )
-      .pipe(sass({
+      .pipe(less({
             output: 'compressed' // 'expanded'
         }))
       .pipe(app.plugins.replace(/@img\//g, '../images/'))

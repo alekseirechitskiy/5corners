@@ -3,7 +3,7 @@
   margin-top: 29px;
   margin-bottom: 32px;
 
-  @media #{$desktop} {
+  @media @desktop {
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -18,9 +18,9 @@
 .breadcrumbs__item {
   padding-right: 20px;
   position: relative;
-  font-size: $font-size-normal;
-  line-height: $line-height-normal;
-  color: $grey1;
+  font-size: @font-size-normal;
+  line-height: @line-height-normal;
+  color: @grey1;
 
   &::after {
     position: absolute;
@@ -34,7 +34,7 @@
   }
 
   &--current {
-    color: $black;
+    color: @black;
 
     &::after {
       display: none;

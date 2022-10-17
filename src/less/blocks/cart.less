@@ -1,7 +1,7 @@
 .cart {
   padding-bottom: 125px;
 
-  @media #{$desktop} {
+  @media @desktop {
     padding-bottom: 145px;
     position: relative;
   }
@@ -9,11 +9,11 @@
 
 .cart__inner{
   width: 100%;
-  @media #{$tablet} {
+  @media @tablet {
     width: 70%;
   }
   
-  @media #{$desktop} {
+  @media @desktop {
     width: 505px;
     margin-right: 50px;
   }
@@ -22,7 +22,7 @@
 .cart__title {
   margin-bottom: 12px;
 
-  @media #{$desktop} {
+  @media @desktop {
     margin-bottom: 15px;
   }
 }
@@ -30,7 +30,7 @@
 .cart__authorization {
   margin-bottom: 32px;
 
-  @media #{$desktop} {
+  @media @desktop {
     margin-bottom: 30px;
   }
 }
@@ -38,7 +38,7 @@
 .cart__form {
   margin-bottom: 40px;
 
-  @media #{$desktop} {
+  @media @desktop {
     margin-bottom: 70px;
   }
 }
@@ -52,17 +52,16 @@
   line-height: 30px;
   margin-bottom: 24px;
 
-  @media #{$desktop} {
+  @media @desktop {
     position: absolute;
     top: 564px;
     right: 0;
     width: 555px;
     padding: 45px 30px;
-    background-color: rgba($black, 0.8);
-    color: $white;
+    background-color: rgba(@black, 0.8);
+    color: @white;
     font-size: 40px;
     line-height: 46px;
     margin-bottom: 0;
   }
-
 }

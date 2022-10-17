@@ -55,6 +55,7 @@
         "not < 0.25%"
     ],
     "dependencies": {
+        "gulp-less": "^5.0.0",
         "jquery": "^3.6.1",
         "select2": "^4.1.0-rc.0",
         "ymaps": "^0.2.1"

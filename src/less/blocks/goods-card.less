@@ -14,7 +14,7 @@
 .goods-card__image {
   margin-right: 12px;
 
-  @media #{$desktop} {
+  @media @desktop {
     width: 150px;
     height: 150px;
     margin-right: 20px;
@@ -32,26 +32,26 @@
 .goods-card__price {
   margin: 0;
   font-weight: 700;
-  font-size: $font-size-normal;
-  line-height: $line-height-small;
+  font-size: @font-size-normal;
+  line-height: @line-height-small;
 
-  @media #{$desktop} {
-    font-size: $font-size-large;
-    line-height: $line-height-large;
+  @media @desktop {
+    font-size: @font-size-large;
+    line-height: @line-height-large;
   }
 }
 
 .goods-card__info-middle {
   display: none;
   
-  @media #{$desktop} {
+  @media @desktop {
     display: block;
     margin-bottom: 25px;
   }
 }
 
 .goods-card__text {
-  color: $grey1;
+  color: @grey1;
   max-width: 150px;
 }
 
@@ -67,17 +67,17 @@
   border: none;
   background-color: transparent;
   // text-decoration: underline;
-  border-bottom: 1px solid $grey1;
+  border-bottom: 1px solid @grey1;
   cursor: pointer;
-  font-size: $font-size-extraSmall;
-  line-height: $line-height-extraSmall;
+  font-size: @font-size-extraSmall;
+  line-height: @line-height-extraSmall;
 
   &:hover {
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid @black;
   }
 
-  @media #{$desktop} {
-    font-size: $font-size-small;
+  @media @desktop {
+    font-size: @font-size-small;
     line-height: 16px;
   }
 }

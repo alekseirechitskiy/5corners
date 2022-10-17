@@ -3,12 +3,12 @@
   width: auto;
   height: 34px;
   font-weight: 700;
-  font-size: $font-size-normal;
-  line-height: $line-height-small;
+  font-size: @font-size-normal;
+  line-height: @line-height-small;
 
-  @media #{$desktop} {
-    font-size: $font-size-large;
-    line-height: $line-height-large;
+  @media @desktop {
+    font-size: @font-size-large;
+    line-height: @line-height-large;
     height: 40px;
   }
 
@@ -23,13 +23,14 @@
 
   & input[type="number"] {
     -moz-appearance: textfield;
+    appearance: textfield;
   }
 }
 
 .input-number__arrow-minus,
 .input-number__arrow-plus {
   padding: 0;
-  color: $black;
+  color: @black;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -37,12 +38,12 @@
   margin: 0;
   width: 22px;
   height: 100%;
-  border: 1px solid $black;
-  background-color: $white;
+  border: 1px solid @black;
+  background-color: @white;
   outline: none;
   cursor: pointer;
 
-  @media #{$desktop} {
+  @media @desktop {
     width: 30px;
   }
 }
@@ -58,9 +59,9 @@
     height: 2px;
     top: 14px;
     left: 8px;
-    background-color: $black;
+    background-color: @black;
 
-    @media #{$desktop} {
+    @media @desktop {
       width: 16px;
       top: 18px;
       left: 15px;
@@ -79,9 +80,9 @@
     height: 2px;
     top: 14px;
     right: 8px;
-    background-color: $black;
+    background-color: @black;
 
-    @media #{$desktop} {
+    @media @desktop {
       width: 16px;
       top: 18px;
       right: 10px;
@@ -95,12 +96,11 @@
     height: 8px;
     top: 11px;
     right: 11px;
-    background-color: $black;
+    background-color: @black;
 
-    @media #{$desktop} {
+    @media @desktop {
       height: 16px;
       right: 16px;
-
     }
   }
 }
@@ -112,7 +112,7 @@
   text-align: center;
   // padding: 5px 10px;
   outline: none;
-  border: 1px solid $black;
+  border: 1px solid @black;
   border-left: none;
   border-right: none;
   border-radius: 0;
@@ -120,7 +120,7 @@
   -moz-appearance: none;
   appearance: none;
 
-  @media #{$desktop} {
+  @media @desktop {
     width: 54px;
   }
 }
