@@ -29,38 +29,37 @@
             </div>
             <form class="cart__form form" id="cartForm">
               <label class="form__input form__input--address"> 
-                <input class="form__input-field form__input-field--address" id="userAddress" type="text" placeholder="Адрес" required>
-                <legend class="form__input-legend">Адрес</legend>
+                <input class="form__input-field form__input-field--required form__input-field--address" id="userAddress" type="text" placeholder="Адрес" required>
+                <legend class="form__input-legend form__input-legend--address">Адрес</legend>
               </label>
               <div class="form__map" id="map"></div>
               <div class="form__field-box">
                 <label class="form__input"> 
-                  <input class="form__input-field" id="userName" type="text" placeholder="Ваше Имя" required>
+                  <input class="form__input-field form__input-field--required" id="userName" type="text" placeholder="Ваше Имя" required>
                   <legend class="form__input-legend">Ваше Имя</legend>
                 </label>
                 <label class="form__input"> 
-                  <input class="form__input-field" id="userPhone" type="tel" placeholder="Ваш Телефон" required>
+                  <input class="form__input-field form__input-field--phone form__input-field--required" id="userPhone" type="tel" placeholder="Ваш Телефон" required>
                   <legend class="form__input-legend">Ваш Телефон</legend>
                 </label>
               </div>
               <label class="form__input"> 
-                <input class="form__input-field" type="email" placeholder="Ваш Email" id="userEmail" required>
+                <input class="form__input-field form__input-field--required" type="email" placeholder="Ваш Email" id="userEmail" required>
                 <legend class="form__input-legend">Ваш Email</legend>
               </label>
-              <label class="form__input form__input--select"> 
+              <label class="form__input-field form__input-field--required form__input--select"> 
                 <select class="form__select" id="userPackage" required>
                   <option class="form__option--empty" value="">Тип упаковки</option>
                   <option class="form__option" value="none">Без упаковки</option>
                   <option class="form__option" value="standart">Стандартная</option>
                   <option class="form__option" value="present">Подарочная</option>
                 </select>  
-                <div class="form__input-legend">Тип упаковки</div>
+                <div class="form__input-legend-select">Тип упаковки</div>
               </label>
-              <label class="form__input"> 
+              <label class="form__input form__input--comment"> 
                 <input class="form__input-field" type="text" id="userComment" placeholder="Введите комментарий">
                 <legend class="form__input-legend">Введите комментарий</legend>
               </label>
-              <!-- <button class="form__button cart__button button" type="submit">Купить</button> -->
             </form>
             <div class="cart__goods goods">
               <h2 class="goods__title subtitle">Выбранные товары:</h2>
@@ -82,9 +81,9 @@
                     </div>
                     <div class="goods-card__info-bottom">
                       <div class="goods-card__input-number input-number">
-                        <button class="input-number__arrow-minus"></button>
-                        <input class="input-number__number-field" type="number" value="1">
-                        <button class="input-number__arrow-plus"></button>
+                        <button class="input-number__arrow-minus arrow-minus-one"></button>
+                        <input class="input-number__number-field number-field-one" type="number" value="1">
+                        <button class="input-number__arrow-plus arrow-plus-one"></button>
                       </div>
                       <button class="goods-card__button link">Удалить</button>
                     </div>
@@ -107,9 +106,9 @@
                     </div>
                     <div class="goods-card__info-bottom">
                       <div class="goods-card__input-number input-number">
-                        <button class="input-number__arrow-minus"></button>
-                        <input class="input-number__number-field" type="number" value="1">
-                        <button class="input-number__arrow-plus"></button>
+                        <button class="input-number__arrow-minus arrow-minus-two"></button>
+                        <input class="input-number__number-field number-field-two" type="number" value="1">
+                        <button class="input-number__arrow-plus arrow-plus-two"></button>
                       </div>
                       <button class="goods-card__button link">Удалить</button>
                     </div>
@@ -132,9 +131,9 @@
                     </div>
                     <div class="goods-card__info-bottom">
                       <div class="goods-card__input-number input-number">
-                        <button class="input-number__arrow-minus"></button>
-                        <input class="input-number__number-field" type="number" value="2">
-                        <button class="input-number__arrow-plus"></button>
+                        <button class="input-number__arrow-minus arrow-minus-three"></button>
+                        <input class="input-number__number-field number-field-three" type="number" value="2">
+                        <button class="input-number__arrow-plus arrow-plus-three"></button>
                       </div>
                       <button class="goods-card__button link">Удалить</button>
                     </div>
@@ -157,8 +156,6 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <!-- @@include('html/_footer.html',{}) -->
   <script src="js/app.min.js"></script>
 </body>
 

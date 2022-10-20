@@ -5,11 +5,17 @@ import headerScripts from './modules/header.js';
 import inputNumber from './modules/inputNumber.js';
 import map from './modules/map.js';
 import select from './modules/select.js';
-import toCollectData from './modules/toCollectData.js';
+import { toCollectData } from './modules/toCollectData.js';
+import maskPlugin from './modules/maskPlugin.js';
 
 functions.isWebp();
 headerScripts();
 inputNumber();
-map();
 select();
+map();
 toCollectData();
+maskPlugin();
+
+
+
+
