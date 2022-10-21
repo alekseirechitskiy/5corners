@@ -12,7 +12,7 @@ export default function () {
   const arrowPlusThree= document.querySelector('.arrow-plus-three');
   const numberFieldThree = document.querySelector('.number-field-three');
 
-  // сам функционал счетчика
+  // функционал счетчика
   const inputNumberFunction = (arrowMinus, arrowPlus, numberField) => { 
     const arrowMinusFn = arrowMinus;
     const arrowPlusFn = arrowPlus;

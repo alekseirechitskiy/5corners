@@ -1,8 +1,6 @@
 import ymaps from 'ymaps';
-import { collectUserAddres } from './toCollectData.js';
 
 export default function () {
-  // collectUserAddres();
   ymaps
     .load('https://api-maps.yandex.ru/2.1/?apikey=a58658f9-413d-4e99-b352-c5cf2d2b4fce&lang=ru_RU')
     .then(maps => {
@@ -59,7 +57,6 @@ export default function () {
           legend.style.opacity = '0';
         })
       }, 1500);
-
     })
     .catch(error => console.error('Failed to load Yandex Maps', error));
 };
