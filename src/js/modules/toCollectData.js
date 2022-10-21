@@ -57,7 +57,19 @@ export function toCollectData() {
     const phone = document.querySelector('#userPhone');
     if (phone.value.length !== 18) {
       phone.classList.add('form__input-field--error');
+      return false;
     } 
+    return true;
+  }
+
+  const checkEmail = () => {
+    const email = document.querySelector('#userEmail');
+    const pattern = /^[a-z0-9_-]+@[a-z0-9_-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    if (!email.value.match(pattern)) {
+      email.classList.add('form__input-field--error');
+      return false;
+    }
+    return true;
   }
 
   const colorSelect = () => {
@@ -79,11 +91,13 @@ export function toCollectData() {
 
   const showFormData = () => {
     if (FormData.address === '' ||
-        FormData.name === '' ||
-        FormData.phone === '' ||
-        FormData.email === '' ||
-        FormData.package === '') {
-      alert('Заполните обязательные поля');
+      FormData.name === '' ||
+      FormData.phone === '' ||
+      !colorPhone() ||
+      FormData.email === '' ||
+      !checkEmail() ||
+      FormData.package === '' ) {
+      alert('Заполните обязательные поля корректно');
     } else {
       console.log('FormData: ', FormData);
     }
@@ -96,6 +110,7 @@ export function toCollectData() {
     collectData();
     colorField();
     colorPhone();
+    checkEmail();
     colorSelect();
     checkAddressField();
     showFormData();
