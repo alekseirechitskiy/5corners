@@ -7,7 +7,6 @@ import map from './modules/map.js';
 import select from './modules/select.js';
 import { toCollectData } from './modules/toCollectData.js';
 import maskPlugin from './modules/maskPlugin.js';
-// import emailMask from './modules/emailMask.js';
 
 functions.isWebp();
 headerScripts();
@@ -16,7 +15,6 @@ select();
 map();
 toCollectData();
 maskPlugin();
-// emailMask();
 
 
 
