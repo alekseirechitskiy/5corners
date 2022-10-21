@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alekseirechitskiy.github.io/5corners",
     "name": "gulp-2022",
     "version": "1.0.0",
     "description": "Aleksei's build",
@@ -7,9 +8,8 @@
     "scripts": {
         "dev": "gulp",
         "build": "gulp build --build",
-        "zip": "gulp deployZIP --build",
-        "deploy": "gulp deployFTP --build",
-        "svgSprite": "gulp sprite"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "author": "Aleksei Rechitskiy",
     "license": "ISC",
