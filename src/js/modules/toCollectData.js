@@ -99,6 +99,7 @@ export function toCollectData() {
       FormData.package === '' ) {
       alert('Заполните обязательные поля корректно');
     } else {
+      alert('Информация успешно обработана. Смотри консоль');
       console.log('FormData: ', FormData);
     }
   }
